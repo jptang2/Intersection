@@ -1,28 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using System.Configuration;
-using System.Diagnostics;
-using Digihail.AVE.Controls.GIS3D.Extend.CustomRenderPrimitives;
-using Digihail.AVE.Media3D.Library;
-using OpenTK;
-using Digihail.AVE.Controls.GIS3D.Core.EntityComponent.Controller;
-using Digihail.AVE.Controls.GIS3D.Core;
-using Digihail.AVE.Controls.GIS3D.Extend.EntityComponent.Visual;
-using Digihail.AVE.Media3D.EntityFramework;
-using Digihail.AVE.Controls.GIS3D.Core.EntityComponent.Transform;
-using Digihail.AVE.Media3D.EntityFramework.EntityComponent.Transform;  
-using Digihail.AVE.Controls.GIS3D.Utils;
-using Digihail.AVE.Media3D.EntityFramework.EntityComponent.Visual;
-using Digihail.AVE.Media3D.EntityFramework.EntityComponent.Visual.BillboardStyles;
-using System.Xml.Serialization;
-namespace Digihail.AVE.Controls.GIS3D.Sample.RadarPower
+namespace Controls.GIS3D.Sample.RadarPower
 {
     public partial class Form1 : Form
     {                
@@ -495,7 +471,7 @@ namespace Digihail.AVE.Controls.GIS3D.Sample.RadarPower
 
                 // 摄像机操作
                 // 设置摄像机跟随预警机实体
-                globe3DControl1.CameraController.ObserveMode = Digihail.AVE.Controls.GIS3D.Core.EntityComponent.Controller.GlobeCameraControllerComponent.CameraObserveMode.Free;
+                globe3DControl1.CameraController.ObserveMode = Controls.GIS3D.Core.EntityComponent.Controller.GlobeCameraControllerComponent.CameraObserveMode.Free;
 
                 // 修改摄像机的oriantationmode为surface
                 globe3DControl1.CameraController.OrientationMode = GlobeCameraControllerComponent.CameraOrientationMode.NorthPole;
